@@ -108,7 +108,7 @@
             {
               "__typename": "MultipleChoiceOption",
               "id": "asd",
-              "displayName": "Size",
+              "displayName": "Size",                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
               "values": [
                 {
                   "label": "XL"
@@ -126,6 +126,10 @@
             {
               "label": "color",
               "hexColors": ["#222"]
+            },
+            {
+              "label": "color",
+              "hexColors": ["#ffb200"]
             }
           ]
         },

@@ -1,0 +1,14 @@
+/* Navigation Slider Starts */
+
+.sliderNav div{
+  text-align: center;
+  background: #000000;
+}
+.sliderNav h3{
+  color: #ffffff;
+  font-size: 18px;
+  margin: 0px;
+  padding: 10px;
+}    
+
+/* Navigation Slider Ends */
