@@ -30,17 +30,17 @@ const Footer: FC<Props> = ({ className, pages }) => {
     <footer className={rootClassName}>
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 border-b border-accent-2 py-12 text-primary bg-primary transition-colors duration-150">
-          <div className="col-span-1 lg:col-span-2">
+          <div className="col-span-1 lg:col-span-3">
             <Link href="/">
               <a className="flex flex-initial items-center font-bold md:mr-24">
-                <span className="rounded-full border border-accent-6 mr-2">
+                <span className="mr-2">
                   <Logo />
                 </span>
-                <span>ACME</span>
+                {/* <span>Mesua Ferrea</span> */}
               </a>
             </Link>
           </div>
-          <div className="col-span-1 lg:col-span-8">
+          <div className="col-span-1 lg:col-span-3">
             <div className="grid md:grid-rows-4 md:grid-cols-3 md:grid-flow-col">
               {[...links, ...sitePages].map((page) => (
                 <span key={page.url} className="py-3 md:py-0 md:pb-4">
@@ -53,7 +53,20 @@ const Footer: FC<Props> = ({ className, pages }) => {
               ))}
             </div>
           </div>
-          <div className="col-span-1 lg:col-span-2 flex items-start lg:justify-end text-primary">
+          <div className="col-span-1 lg:col-span-3">
+            <div className="grid md:grid-rows-4 md:grid-cols-3 md:grid-flow-col">
+              {[...links, ...sitePages].map((page) => (
+                <span key={page.url} className="py-3 md:py-0 md:pb-4">
+                  <Link href={page.url!}>
+                    <a className="text-accent-9 hover:text-accent-6 transition ease-in-out duration-150">
+                      {page.name}
+                    </a>
+                  </Link>
+                </span>
+              ))}
+            </div>
+          </div>
+          <div className="col-span-1 lg:col-span-3 flex items-start lg:justify-end text-primary">
             <div className="flex space-x-6 items-center h-10">
               <a
                 className={s.link}
