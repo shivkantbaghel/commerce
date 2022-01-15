@@ -16,8 +16,8 @@ interface NavbarProps {
 
 const Navbar: FC<NavbarProps> = ({ links }) => (
   <NavbarRoot>
-    <div class="flex space-x-3">
-      <div class="flex justify-start ml-20 p-3">
+    <div class="flex ">
+      <div class="flex justify-start  space-x-3 ml-20 p-3">
         <div>
           <Link href="/">
             <a>Home</a>
@@ -34,7 +34,7 @@ const Navbar: FC<NavbarProps> = ({ links }) => (
           </Link>
         </div>
         </div>
-        <div class="flex justify-items-end mr-20 p-3 item-center">
+        <div class="flex justify-items-end mr-20 p-3 space-x-3 item-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-5 w-5"
